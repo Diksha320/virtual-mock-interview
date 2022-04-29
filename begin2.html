@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Recorder in Javascript</title>
+    <link rel="stylesheet" href="begin2.css">
+    
+  </head>
+  <style>
+      .button {
+ 		 background-color: #4CAF50;
+ 		 border: none;
+ 		 color: white;
+ 		 padding: 15px 32px;
+ 		 text-align: center;
+ 		 text-decoration: none;
+ 		 display: inline-block;
+ 		 font-size: 16px;
+ 		 margin: 4px 2px;
+ 		 cursor: pointer;
+	}    
+  .container1 {   
+       		 padding: 25px;   
+        	 background-color: rgb(62, 182, 136);  
+    	}
+  </style>
+  <body>
+    <div class ="container1" ><p1>2. Where do you see yourself in next 5 years</p1></div>
+    <div id="container">
+      <video id="gum" playsinline autoplay muted></video>
+      <video id="recorded" playsinline loop></video>
+    
+      <h3 id="gesture"> </h3>
+   
+        
+      
+
+      <div>
+        <button id="start">Start camera</button>
+        <button id="record" disabled>Record</button>
+        <button id="play" disabled>Play</button>
+        <button id="download" disabled>Download my response</button>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="video" name="myfile">
+        <button id="analyze">Analyze</button>
+      </div>
+
+      <div>
+        <h4>Media Stream Constraints options</h4>
+        <p>
+          Echo cancellation: <input type="checkbox" id="echoCancellation" />
+        </p>
+      </div>
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+    <nav>
+        <a href="course.html" class="button">back </a>
+    </nav>
+    <nav>
+        <a href="exit.html" class="button">submit </a>
+    </nav>
+  </body>
+  <script src="begin2.js"></script>
+</html>

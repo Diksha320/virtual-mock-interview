@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Recorder in Javascript</title>
+    <link rel="stylesheet" href="begin.css">
+    
+  </head>
+  <style>
+    button {
+    margin: 0 3px 10px 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 99px;
+  }
+  
+  button:last-of-type {
+    margin: 0;
+  }
+  
+  p.borderBelow {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+  }
+  
+  video {
+    vertical-align: top;
+    --width: 25vw;
+    width: var(--width);
+    height: calc(var(--width) * 0.5625);
+  }
+  
+  video:last-of-type {
+    margin: 0 0 20px 0;
+  }
+  
+  video#gumVideo {
+    margin: 0 20px 20px 0;
+  }
+      .button {
+ 		 background-color: #4CAF50;
+ 		 border: none;
+ 		 color: white;
+ 		 padding: 15px 32px;
+ 		 text-align: center;
+ 		 text-decoration: none;
+ 		 display: inline-block;
+ 		 font-size: 16px;
+ 		 margin: 4px 2px;
+ 		 cursor: pointer;
+	}    
+  .container1 {   
+       		 padding: 25px;   
+        	 background-color: lightblue;  
+    	}
+  </style>
+  <body>
+    <div class ="container1" ><p1>1. Tell me about yourself</p1></div>
+    <div id="container">
+      <video id="gum" playsinline autoplay muted></video>
+      <video id="recorded" playsinline loop></video>
+    
+      <h3 id="gesture"> </h3>
+   
+        
+      
+
+      <div>
+        <h4> to start video --></h4>
+        <button id="start">Start camera</button>
+        <button id="record" disabled>Record</button>
+        <button id="play" disabled>Play</button>
+        <button id="download" disabled>Download my response</button>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="video" name="myfile">
+        <button id="analyze">Analyze</button>
+      </div>
+
+      <div>
+        <h4>Media Stream Constraints options</h4>
+        <p>
+          Echo cancellation: <input type="checkbox" id="echoCancellation" />
+        </p>
+      </div>
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+    <nav>
+        <a href="course.html" class="button">back </a>
+    </nav>
+    <nav>
+        <a href="begin2.html" class="button">submit </a>
+    </nav>
+  </body>
+  <script src="begin.js"></script>
+</html>
